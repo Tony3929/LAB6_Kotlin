@@ -39,13 +39,13 @@ class MainActivity : AppCompatActivity() {
             AlertDialog.Builder(this)
                 .setTitle("按鈕式AlertDialog")
                 .setMessage("AlertDialog內容")
-                .setNegativeButton("左按鈕"){ dialog,which->
+                .setNeutralButton("左按鈕"){ dialog,which->
                     showToast("左按鈕")
                 }
                 .setNegativeButton("中按鈕"){ dialog,which->
                     showToast("中按鈕")
                 }
-                .setNegativeButton("右按鈕"){ dialog,which->
+                .setPositiveButton("右按鈕"){ dialog,which->
                     showToast("右按鈕")
                 }.show()
         }
